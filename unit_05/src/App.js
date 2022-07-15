@@ -56,9 +56,11 @@ function App() {
     setSt7(generateColor)
   }
   function task8(event) {
+  
     let result = []
     let value = event.target.value.split("")
-
+    value.push(event.key)
+  
     value.forEach(item => {
       if(+item) {
         result.push("1")

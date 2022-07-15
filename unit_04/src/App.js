@@ -48,7 +48,7 @@ function App() {
   }
   function task8(event) {
     let result = []
-    let value = event.target.value.split("")
+    let value = event.key.split("")
 
     value.forEach(item => {
       if(+item) {
